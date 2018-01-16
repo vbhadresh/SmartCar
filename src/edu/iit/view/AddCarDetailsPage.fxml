@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" 
+minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" 
+stylesheets="@Default.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.iit.controller.AddCar">
+   <children>
+      <Label textFill="#FFFFFF" alignment="CENTER" layoutX="127.0" layoutY="14.0" prefHeight="53.0" prefWidth="347.0" text="Add Car details" textAlignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button styleClass="shiny-orange" layoutX="487.0" layoutY="323.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="75.0" text="Back" onAction="#Back" />
+      <Button styleClass="shiny-orange" layoutX="384.0" layoutY="324.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Add" onAction="#UpdateCarDetails"/>
+      <Label textFill="#FFFFFF" layoutX="137.0" layoutY="108.0" prefHeight="20.0" prefWidth="128.0" text="Enter Car Model    :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label textFill="#FFFFFF" layoutX="137.0" layoutY="145.0" prefHeight="20.0" prefWidth="128.0" text="Enter Car number  :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      
+      <TextField  fx:id="sp_carName" layoutX="301.0" layoutY="105.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="sp_carModel" layoutX="301.0" layoutY="143.0" />
+   </children>
+</AnchorPane>

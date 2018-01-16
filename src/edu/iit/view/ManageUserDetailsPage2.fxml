@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" 
+xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" 
+fx:controller="edu.iit.controller.ManageUserDetailsPageTwo">
+   <children>
+      <Label textFill="#FFFFFF" alignment="CENTER" layoutX="127.0" prefHeight="53.0" prefWidth="347.0" text="Manage User details" textAlignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="487.0" layoutY="323.0" mnemonicParsing="false" onAction="#goback" prefHeight="26.0" prefWidth="75.0" text="Cancel" />
+      <Button layoutX="384.0" layoutY="324.0" mnemonicParsing="false" onAction="#updateUserDetails" prefHeight="25.0" prefWidth="75.0" text="Update" />
+      <Label textFill="#FFFFFF" layoutX="137.0" layoutY="51.0" prefHeight="32.0" prefWidth="196.0" text="Update user details:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label textFill="#FFFFFF" layoutX="137.0" layoutY="85.0" prefHeight="20.0" prefWidth="90.0" text="Name    :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label textFill="#FFFFFF" layoutX="137.0" layoutY="145.0" prefHeight="20.0" prefWidth="90.0" text="Contact :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label textFill="#FFFFFF" layoutX="137.0" layoutY="115.0" prefHeight="13.0" prefWidth="90.0" text="Age       :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label textFill="#FFFFFF" layoutX="384.0" layoutY="115.0" prefHeight="20.0" prefWidth="43.0" text="Sex :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label textFill="#FFFFFF" layoutX="137.0" layoutY="176.0" prefHeight="20.0" prefWidth="90.0" text="Email     :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label textFill="#FFFFFF" layoutX="137.0" layoutY="267.0" prefHeight="32.0" prefWidth="419.0" text="To save the changes, click 'Update'." />
+      <TextField fx:id="name" layoutX="213.0" layoutY="83.0" prefHeight="25.0" prefWidth="196.0" />
+      <TextField fx:id="age" layoutX="213.0" layoutY="113.0" />
+      <TextField fx:id="contact" layoutX="213.0" layoutY="143.0" />
+      <TextField fx:id="email" layoutX="213.0" layoutY="173.0" prefHeight="25.0" prefWidth="196.0" />
+      <TextField fx:id="sex" layoutX="422.0" layoutY="113.0" prefHeight="25.0" prefWidth="57.0" />
+   </children>
+</AnchorPane>
