@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+	prefWidth="600.0" stylesheets="@Default.css" xmlns="http://javafx.com/javafx/8.0.141"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.iit.controller.UserLayout">
+	<children>
+		<MenuButton styleClass="dark-blue" layoutX="14.0" layoutY="71.0"
+			mnemonicParsing="false" prefHeight="20.0" prefWidth="160.0"
+			text="          ManageUser">
+			<items>
+				<MenuItem mnemonicParsing="false" text="Edit Car Details" onAction="#editCarDetails" />
+				<MenuItem mnemonicParsing="false" text="Edit User Details" onAction="#editUserDetails"/>
+				<MenuItem mnemonicParsing="false" text="Add a Friend" />
+			</items>
+		</MenuButton>
+		<MenuButton styleClass="dark-blue" layoutX="14.0" layoutY="144.0"
+			mnemonicParsing="false" prefHeight="20.0" prefWidth="160.0"
+			text="           AddCar">
+			<items>
+				<MenuItem mnemonicParsing="false" onAction="#AddCarDetails"
+					text="Add Car Details" />
+			</items>
+		</MenuButton>
+		<Button styleClass="dark-blue" layoutX="14.0" layoutY="216.0"
+			mnemonicParsing="false" prefHeight="20.0" prefWidth="160.0" text="Book Slot"
+			onAction="#BookaSlot">
+		</Button>
+		<Button styleClass="dark-blue" layoutX="14.0" layoutY="287.0"
+			mnemonicParsing="false" prefHeight="20.0" prefWidth="160.0"
+			text="         Booking History" onAction="#getLatestBooking">
+		</Button>
+		<ButtonBar layoutX="153.0" layoutY="7.0" prefHeight="40.0"
+			prefWidth="333.0">
+			<buttons>
+				<Button styleClass="shiny-orange" mnemonicParsing="false"
+					prefHeight="32.0" prefWidth="370.0" text="Illinois Smart Parking " />
+			</buttons>
+		</ButtonBar>
+		<Button styleClass="shiny-orange" layoutX="525.0" layoutY="15.0"
+			mnemonicParsing="false" text="Logout" onAction="#Logout" />
+	</children>
+</AnchorPane>

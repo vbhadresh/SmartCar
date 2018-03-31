@@ -389,36 +389,6 @@ private String getBookingHours(){
 		return hours.getText();
 	}
 	
-	
-	
-	
-	
-	
-	/*public String getInput(String text,String Title){
-		TextInputDialog dialog = new TextInputDialog(Title);
-		dialog.setTitle(Title);
-		dialog.setContentText(text);
-		Optional<String> result = dialog.showAndWait();
-		if(result.isPresent()){
-		if(!(result.get().matches("([0-9]{2})/([0-9]{2})/([0-9]{4})"))){
-		 loop(result,text,Title);
-		}else{
-			return result.get();
-		}
-		}else{
-			System.out.println("Cancel Button is pressed");
-			return "";
-		}
-		return result.get();
-	}
-	
-	private void loop(Optional<String> result,String text,String Title){
-		while((result.get().matches("([0-9]{2})/([0-9]{2})/([0-9]{4})"))){
-			 AlertWarningMsg("Please Enter Date in Specified format. Ex: 12/09/2017 ");
-			 getInput(text, Title);
-		 }
-	}*/
-	
 	private int calculatepaymentCharges(String bookinghours){
 		int hours=Integer.parseInt(bookinghours);
 		int tariff=manage.get_tariff(getCategory(),getView());
